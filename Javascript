@@ -1,0 +1,79 @@
+What are Closures?
+Closures are the function inside function and it makes a normal function stateful.
+Why we need Closures?
+to create Self contained modules, self contained state, so it solves global variable problem.
+
+What is IIF? It is an anaonymous function which gets immediately invoked
+
+what is name collision. It is happen when same name function name and variable name are declared.
+
+what are various way of create object?
+Using Literal : var patObjet = {"a":'', "b":}
+using object.create(pat);
+Using constructor 
+Using ES6 Classes;
+class PatientClass{
+constructor(name, address){
+this.name ="";
+this.address = "";
+}
+}
+
+var pObject = new PatientClass()
+
+how dto do inheritance in javasacript?
+uses object inheritanec or prototypical inheritance. It is done Prototype Object.
+function Employee(){
+this.name ="";
+}
+
+function Manager(){
+this. age = "";
+}
+
+var empObject  = new Employee();
+Manager.prototype = emp;
+
+what is prototype in javasacript?
+Every Javascript object has a prototype object. It is n inbuilt in javascript. It is worked as linkedlist.
+
+what is prototype chaining?
+It is worked as linkedlist which is called chianig. When object are inherited from another.
+
+Let in Javascript? It help to create immediate block level local scope.
+
+Are Let variable hoisted?
+yes they are hoisted but not initialized.
+Hoisted means declaration moved at top and a
+
+Explain Temporal Dead zone?
+ it is a state of a variable where vairable are named in memory(scope) but they are not initialized with any value.
+ 
+var and let :
+var: scoped t the immediate function and let scoped to the immediate enclosing block
+var initialized with Undefined let value initialized with nothing
+
+Implicit nd Expicit binding
+
+Implement caching/Memoize Function
+ we will have separate function where we will check if its already here then return else manipulate and return
+Event Loop
+SetTimeOut is browser function which is execute at last and in Task Queue
+Promise will also work at last and in MicroTask Queue
+
+Infinite Currying
+function add(a){
+return function(b){
+if(b) return add(a+b);
+return a;
+}
+}
+console.log(add(5)(2)(4)(8)());
+
+Difference between map vs foreach
+map- doesn't modify the array and return new array. As it return array we can use other function
+foreach= modify the array
+
+--Differnce null vs undefined
+null - actual value
+undefined - variable is declared but not initialized.
